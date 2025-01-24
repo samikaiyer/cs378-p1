@@ -1,0 +1,78 @@
+body {
+    color: black;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    width: 100%;
+    padding: 10px; /* may change the amount */
+    margin-bottom: 1rem;
+  }
+
+.logo {
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+  
+.logo-text {
+    font-size: 1.5rem; /* may change the amount */
+    font-family: cursive;
+    color: orange;
+  }
+  
+.header-text {
+    font-size: 1rem;
+    color: darkblue;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .flex-container {
+    display: flex; /* Enables flexbox layout */
+    width: 100%; /* Full width of the parent container */
+    height: 7rem; /* Set a specific height for the box */
+    overflow: hidden;
+    margin-bottom: 1rem;
+  }
+  
+  .image-container {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .image-container img {
+    position: absolute; /* Allows centering within the container */
+  top: 50%; /* Moves the image's top edge to the vertical center */
+  left: 50%; /* Moves the image's left edge to the horizontal center */
+  transform: translate(-50%, -50%); /* Centers the image exactly by shifting it back half its size */
+  width: 110px; /* Set a fixed width for the image */
+  height: 100px; /* Set a fixed height for the image */
+  object-fit: cover; /* Ensures the image doesn't get distorted */
+  border-radius: 5px;
+  }
+  
+  .text-container {
+    flex: 2; /* Text takes 4/5 of the container width */
+    display: flex; /* Optional: Center the text vertically */
+    flex-direction: column;
+    font-size: 10px;
+  }
+
+  .item-title {
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  .custom-button {
+    background-color: rgb(221, 206, 206);
+    border-radius: 50px;
+    border-color: rgb(221, 206, 206);
+  }
+  
+  
